@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Alash Darzhai](https://up.htmlacademy.ru/adaptive/23/user/340711).
-* Наставник: `Неизвестно`.
+- Студент: [Alash Darzhai](https://up.htmlacademy.ru/adaptive/23/user/340711).
+- Наставник: [Ярослав Баронин](https://htmlacademy.ru/profile/id155830).
 
 ---
 
