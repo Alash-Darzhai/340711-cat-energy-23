@@ -37,14 +37,18 @@
         <fieldset class="program-form">
           <legend class="visually-hidden">Подбор программы</legend>
           <ul class="program-form__list">
-            <li class="program-form__item"><label for="cat-name">Имя:*</label>
+            <li class="program-form__item">
+              <label for="cat-name">Имя:*</label>
               <input id="cat-name" type="text" name="name" required placeholder="Барсик">
             </li>
-            <li class="program-form__item"><label for="cat-weight">Вес (кг):*</label>
-              <input id="cat-weight" type="number" name="cat-weight" required placeholder="7">
+            <li class="program-form__item">
+              <label for="cat-weight">Вес (кг):*</label>
+              <input id="cat-weight" type="number" name="cat-weight" value="7" min="1" max="100" required
+                placeholder="7">
             </li>
-            <li class="program-form__item"><label for="cat-age">Возраст (лет):</label>
-              <input id="cat-age" type="number" name="cat-age" placeholder="7">
+            <li class="program-form__item">
+              <label for="cat-age">Возраст (лет):</label>
+              <input id="cat-age" type="number" name="cat-age" value="7" min="1" max="100" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -116,7 +120,7 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</p>
+      <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
       <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17434.48411637791!2d30.303261893672474!3d59.94149056017069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627166533108!5m2!1sru!2sru"
