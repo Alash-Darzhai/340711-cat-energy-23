@@ -1,11 +1,29 @@
 // global
+@import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/normalize";
-@import "global/variables.scss";
 
 // blocks
-@import "blocks/button.scss";
+@import "components/buttons.scss";
+@import "components/range-control.scss";
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page.scss";
+@import "blocks/programs.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+
+// blocks-2
+@import "blocks-2/program.scss";
+@import "blocks-2/program-type.scss";
+@import "blocks-2/user-contacts.scss";
+@import "blocks-2/user-comments.scss";
+@import "blocks-2/additionally.scss";
+
+// blocks-3
+@import "blocks-3/catalog.scss";
+@import "blocks-3/catalog-additional.scss";
+@import "blocks-3/present.scss";

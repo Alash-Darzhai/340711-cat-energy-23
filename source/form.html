@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -55,7 +55,7 @@
         </fieldset>
 
         <fieldset class="program-type">
-          <legend class="visually-hudden">Тип программы</legend>
+          <legend class="visually-hidden">Тип программы</legend>
           <ul class="program-type__list">
             <li class="program-type__item">
               <input id="slim-type" type="radio" name="program-type" value="slim" checked>
@@ -121,8 +121,10 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper contacts__wrapper--form">
+        <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17434.48411637791!2d30.303261893672474!3d59.94149056017069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627166533108!5m2!1sru!2sru"
         width="320" height="362" allowfullscreen
@@ -149,7 +151,6 @@
 
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy <img
           src="img/htmlacademy.svg" width="60" height="60" alt="Перейти на страницу курса HTML Academy"></a>
     </div>

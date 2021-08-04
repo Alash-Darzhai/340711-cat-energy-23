@@ -1,0 +1,30 @@
+.programs {
+  margin-bottom: 27px;
+}
+
+.programs-list__item {
+  background-color: $grey;
+}
+
+.programs-list__title {
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.programs-list__description {
+  margin-bottom: 38px;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey-special;
+}
+
+.programs-list__catalog {
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
