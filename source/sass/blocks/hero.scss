@@ -1,8 +1,4 @@
-.page-header {
-  margin-bottom: 22px;
-}
-
-.page-header__bottom {
+.hero__container {
   padding-top: 27px;
   background-color: $green;
   background-image: url("../../img/picture/image-background.png");
@@ -12,7 +8,7 @@
   text-transform: uppercase;
 }
 
-.page-header__title {
+.hero__title {
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
@@ -20,7 +16,7 @@
   font-weight: 400;
 }
 
-.page-header__slogan {
+.hero__slogan {
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
@@ -29,7 +25,7 @@
   text-transform: uppercase;
 }
 
-.page-header__image {
+.hero__image {
   margin-bottom: 3px;
   width: 280px;
   height: 270px;

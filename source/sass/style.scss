@@ -3,27 +3,29 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/normalize";
+@import "global/helpers.scss";
 
-// blocks
+
+//components
 @import "components/buttons.scss";
 @import "components/range-control.scss";
-@import "blocks/header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/page.scss";
+@import "components/input.scss";
+@import "components/main-nav.scss";
+
+// blocks
+@import "blocks/hero.scss";
 @import "blocks/programs.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
+@import "blocks/program.scss";
+@import "blocks/user-contacts.scss";
+@import "blocks/user-comments.scss";
+@import "blocks/additionally.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-additional.scss";
+@import "blocks/present.scss";
 
-// blocks-2
-@import "blocks-2/program.scss";
-@import "blocks-2/program-type.scss";
-@import "blocks-2/user-contacts.scss";
-@import "blocks-2/user-comments.scss";
-@import "blocks-2/additionally.scss";
-
-// blocks-3
-@import "blocks-3/catalog.scss";
-@import "blocks-3/catalog-additional.scss";
-@import "blocks-3/present.scss";
+// page
+@import "pages/page.scss"
