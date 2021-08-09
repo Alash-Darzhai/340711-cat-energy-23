@@ -1,0 +1,14 @@
+.present {
+  height: 289px;
+  background-color: $green;
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.present__description {
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}

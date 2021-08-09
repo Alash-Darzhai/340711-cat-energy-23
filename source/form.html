@@ -5,123 +5,144 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__top wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="34" height="38" alt="Кэт">
-        <img src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
-      </a>
+    <div class="page-header__top">
+      <div class="wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo.svg" width="34" height="38" alt="Кэт">
+          <img src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
+        </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"> <a href="index.html">Главная</a></li>
-          <li class="site-list__item"> <a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item site-list__item--current"> <a>Подбор продукции</a></li>
-        </ul>
-      </nav>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"> <a href="index.html">Главная</a></li>
+            <li class="site-list__item"> <a href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--current"> <a>Подбор продукции</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="main-form">
-    <h2 class="program-title wrapper">Подбор программы</h2>
-    <p class="program-description wrapper">Заполните анкету, и мы подберем
-      программу питания для вашего кота</p>
+    <div class="wrapper">
+      <h2 class="program-title">Подбор программы</h2>
+      <p class="program-description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+    </div>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="program  wrapper">
-        <fieldset class="program-form">
-          <legend class="visually-hidden">Подбор программы</legend>
-          <ul class="program-form__list">
-            <li class="program-form__item">
-              <label for="cat-name">Имя:*</label>
-              <input id="cat-name" type="text" name="name" required placeholder="Барсик">
-            </li>
-            <li class="program-form__item">
-              <label for="cat-weight">Вес (кг):*</label>
-              <input id="cat-weight" type="number" name="cat-weight" value="7" min="1" max="100" required
-                placeholder="7">
-            </li>
-            <li class="program-form__item">
-              <label for="cat-age">Возраст (лет):</label>
-              <input id="cat-age" type="number" name="cat-age" value="7" min="1" max="100" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
+      <div class="program">
+        <div class="wrapper">
+          <fieldset class="program-form">
+            <legend class="visually-hidden">Подбор программы</legend>
+            <ul class="program-form__list">
+              <li class="program-form__item">
+                <label for="cat-name">Имя:*</label>
+                <input id="cat-name" type="text" name="name" required placeholder="Барсик">
+              </li>
+              <li class="program-form__item">
+                <label for="cat-weight">Вес (кг):*</label>
+                <input id="cat-weight" type="number" name="cat-weight" value="7" min="1" max="100" required
+                  placeholder="7">
+              </li>
+              <li class="program-form__item">
+                <label for="cat-age">Возраст (лет):</label>
+                <input id="cat-age" type="number" name="cat-age" value="7" min="1" max="100" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-        <fieldset class="program-type">
-          <legend class="visually-hudden">Тип программы</legend>
-          <ul class="program-type__list">
-            <li class="program-type__item">
-              <input id="slim-type" type="radio" name="program-type" value="slim" checked>
-              <label for="slim-type" aria-label="Программа для похудения">Похудение</label>
-            </li>
-            <li class="program-type__item">
-              <input id="pro-type" type="radio" name="program-type" value="pro">
-              <label for="pro-type" aria-label="Программа для набора массы">Набор массы</label>
-            </li>
-            <li class="program-type__item">
-              <input id="advice-type" type="radio" name="program-type" value="advice">
-              <label for="advice-type" aria-label="Нужен совет по подбору программы">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="wrapper">
+          <fieldset class="program-type">
+            <legend class="visually-hidden">Тип программы</legend>
+            <ul class="program-type__list">
+              <li class="program-type__item">
+                <input class="input-radio" id="slim-type" type="radio" name="program-type" value="slim" checked>
+                <label class="input-radio" for="slim-type" aria-label="Программа для похудения">Похудение</label>
+              </li>
+              <li class="program-type__item">
+                <input class="input-radio" id="pro-type" type="radio" name="program-type" value="pro">
+                <label class="input-radio" for="pro-type" aria-label="Программа для набора массы">Набор массы</label>
+              </li>
+              <li class="program-type__item">
+                <input class="input-radio" id="advice-type" type="radio" name="program-type" value="advice">
+                <label class="input-radio" for="advice-type" aria-label="Нужен совет по подбору программы">Не знаю
+                  (Нужен
+                  ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
       </div>
 
       <fieldset class="user-contacts">
-        <legend>Контактные данные (владельца кота)</legend>
-        <ul class="user-contacts__list wrapper">
-          <li class="user-contacts__item">
-            <label for="user-email">E-mail:*</label>
-            <input id="user-email" type="email" name="email" required placeholder="kuklachev@gmail.com">
-          </li>
-          <li class="user-contacts__item">
-            <label for="user-phone">Телефон</label>
-            <input id="user-phone" type="tel" name="phone" required placeholder="8 (960) 900-60-90">
-          </li>
-        </ul>
+        <legend class="legend-default user-contacts__legend">Контактные данные (владельца кота)</legend>
+        <div class="wrapper">
+          <ul class="user-contacts__list">
+            <li class="user-contacts__item">
+              <label class="input-text" for="user-email">E-mail:*</label>
+              <input class="input-text" id="user-email" type="email" name="email" required
+                placeholder="kuklachev@gmail.com">
+            </li>
+            <li class="user-contacts__item">
+              <label class="input-text" for="user-phone">Телефон</label>
+              <input class="input-text" id="user-phone" type="tel" name="phone" required
+                placeholder="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="user-comments">
-        <legend>Комментарий</legend>
-        <label for="message"></label>
-        <textarea class="user-comments__description wrapper" id="message" name="message"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <legend class="legend-default user-comments__legend">Комментарий</legend>
+        <div class="wrapper">
+          <label for="message"></label>
+          <textarea class="user-comments__description" id="message" name="message"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
 
       <fieldset class="additionally">
-        <legend>Дополнительно</legend>
-        <ul class="additionally__list wrapper">
-          <li class="additionally__item">
-            <input type="checkbox" name="sweetener" id="sweetener" checked>
-            <label for="sweetener">Сахарозаменитель</label>
-          </li>
-          <li class="additionally__item">
-            <input type="checkbox" name="milk" id="milk">
-            <label for="milk">Молоко</label>
-          </li>
-          <li class="additionally__item">
-            <input type="checkbox" name="water" id="water">
-            <label for="water">Вода</label>
-          </li>
-          <li class="additionally__item">
-            <input type="checkbox" name="vitamins" id="vitamins">
-            <label for="vitamins">Витамины</label>
-          </li>
-        </ul>
+        <legend class="legend-default additionally__legend">Дополнительно</legend>
+        <div class="wrapper">
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <input class="input-chekbox" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="input-chekbox" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="additionally__item">
+              <input class="input-chekbox" type="checkbox" name="milk" id="milk">
+              <label class="input-chekbox" for="milk">Молоко</label>
+            </li>
+            <li class="additionally__item">
+              <input class="input-chekbox" type="checkbox" name="water" id="water">
+              <label class="input-chekbox" for="water">Вода</label>
+            </li>
+            <li class="additionally__item">
+              <input class="input-chekbox" type="checkbox" name="vitamins" id="vitamins">
+              <label class="input-chekbox" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
-      <button class="button" type="button">Отправить заявку</button>
+      <button class="button button__primary" type="button">Отправить заявку</button>
       <p class="required-input">* — Обязательные поля</p>
     </form>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper contacts__wrapper--form">
+        <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17434.48411637791!2d30.303261893672474!3d59.94149056017069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627166533108!5m2!1sru!2sru"
         width="320" height="362" allowfullscreen
@@ -129,28 +150,29 @@
     </section>
   </main>
 
-  <footer class="page-footer wrapper">
-    <a class="page-footer__logo" href="index.html">
-      <img src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
-    </a>
-    <div class="page-footer__social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#"></a>
-        </li>
-      </ul>
+  <footer class="page-footer">
+    <div class="wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
+      </a>
+      <div class="page-footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"></a>
+          </li>
+        </ul>
 
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy <img
-          src="img/htmlacademy.svg" width="60" height="60" alt="Перейти на страницу курса HTML Academy"></a>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy <img
+            src="img/htmlacademy.svg" width="60" height="60" alt="Перейти на страницу курса HTML Academy"></a>
+      </div>
     </div>
   </footer>
 </body>

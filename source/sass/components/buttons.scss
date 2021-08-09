@@ -1,0 +1,40 @@
+.button {
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.button__primary {
+  padding: 7px;
+  background-color: $green;
+  text-transform: uppercase;
+}
+
+.button__secondary {
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.button__third {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $green;
+  text-transform: uppercase;
+}
+
+.button__fourth {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  background-color: $grey;
+  text-transform: uppercase;
+}
