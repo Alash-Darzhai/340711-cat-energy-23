@@ -2,9 +2,38 @@
   margin-bottom: 27px;
 }
 
+.programs-list {
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  list-style: none;
+
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  // }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+}
+
+
 .programs-list__item {
   margin-bottom: 20px;
+  padding: 30px 20px 22px;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs-list__title {

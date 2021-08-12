@@ -6,8 +6,33 @@
   margin-bottom: 38px;
 }
 
+.advantages-list {
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 77px;
+  }
+}
+
 .advantages__item {
   margin-bottom: 20px;
   font-family: $arial;
   color: $dark-grey-special;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
 }
