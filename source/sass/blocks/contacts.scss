@@ -1,8 +1,29 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 27px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 62px auto 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    order: 2;
+    padding: 62px 89px 52px 76px;
+    background-color: $white;
+  }
 }
 
 .contacts__subtitle {
+  width: 139px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -11,6 +32,22 @@
 }
 
 .contacts__adress {
+  width: 140px;
+  font-family: $arial;
   line-height: 20px;
   color: $dark-grey-special;
+}
+
+// .contacts__city {
+//   @media (min-width: $tablet-width) {
+//     padding-top: 60px;
+//   }
+// }
+
+.contacts__map {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

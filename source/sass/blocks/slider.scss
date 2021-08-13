@@ -1,0 +1,26 @@
+.slider {
+  @media (min-width: $desktop-width) {
+    width: 584px;
+  }
+}
+
+.slider__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.slider__item--before {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

@@ -10,9 +10,20 @@
 }
 
 .button__primary {
+  display: block;
   padding: 7px;
   background-color: $green;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-left: 87px;
+    width: 244px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .button__secondary {
