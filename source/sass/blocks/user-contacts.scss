@@ -1,7 +1,50 @@
 .user-contacts {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .user-contacts__legend {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.user-contacts__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 14px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 78px;
+  }
+}
+
+.user-contacts__item {
+  display: flex;
+  align-content: flex-start;
+  gap: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
 }

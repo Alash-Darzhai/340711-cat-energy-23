@@ -1,12 +1,26 @@
 .user-comments {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .user-comments__legend {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .user-comments__description {
+  min-height: 150px;
+  width: 100%;
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey-special;

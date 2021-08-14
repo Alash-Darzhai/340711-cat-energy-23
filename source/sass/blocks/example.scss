@@ -1,5 +1,13 @@
 .example {
   background-color: $grey-lighten-2;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-lighten-2;
+  }
 }
 
 .example__container {
@@ -7,6 +15,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 110px;
+    width: 1440px;
   }
 }
 
@@ -16,7 +27,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 436px;
     background-color: $grey-lighten-2;
+  }
+}
+
+.example__content .container {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    padding: 0;
   }
 }
 

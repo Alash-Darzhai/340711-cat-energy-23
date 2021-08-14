@@ -1,5 +1,9 @@
 .contacts {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+  }
 }
 
 .contacts__wrapper {
@@ -10,6 +14,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 62px auto 51px;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
