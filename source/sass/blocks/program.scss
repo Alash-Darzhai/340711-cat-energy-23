@@ -3,21 +3,83 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .program-description {
   margin-bottom: 39px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  @media (min-width: $tablet-width) {
+    gap: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+  }
 }
 
 .program-form {
-  margin-bottom: 50px;
+  padding: 0;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
+}
+
+.program-form__list {
+  list-style: none;
 }
 
 .program-form__item {
+  display: flex;
+  gap: 11px;
   margin-bottom: 13px;
   font-size: 16px;
   color: $dark-grey-special;
   text-transform: uppercase;
+}
+
+.program-type {
+  padding-left: 20px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 72px;
+    padding: 25px 0 0 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
+}
+
+.program-type__list {
+  list-style: none;
 }

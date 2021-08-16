@@ -1,14 +1,41 @@
 .present {
+  position: relative;
+  margin-bottom: 35px;
   height: 289px;
   background-color: $green;
   background-size: 320px;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+  }
 }
 
 .present__description {
+  position: absolute;
+  top: 186px;
+  left: 58px;
+  width: 161px;
   font-family: $arial;
   font-size: 16px;
   line-height: 20px;
   color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    top: 71px;
+    left: 423px;
+  }
+}
+
+.present__image {
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
 }

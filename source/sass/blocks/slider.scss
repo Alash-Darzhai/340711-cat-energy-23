@@ -1,6 +1,17 @@
 .slider {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-lighten-2;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 584px;
+    width: 690px;
+  }
+}
+
+.slider .container {
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    padding: 0;
   }
 }
 

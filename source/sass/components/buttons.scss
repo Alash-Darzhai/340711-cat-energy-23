@@ -14,16 +14,6 @@
   padding: 7px;
   background-color: $green;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    margin-left: 87px;
-    width: 244px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 80px;
-  }
 }
 
 .button__secondary {
@@ -39,6 +29,10 @@
   line-height: 20px;
   background-color: $green;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .button__fourth {
@@ -48,4 +42,34 @@
   color: $black;
   background-color: $grey;
   text-transform: uppercase;
+}
+
+.button-wrapper-first {
+  @media (min-width: $tablet-width) {
+    margin-left: 87px;
+    width: 244px;
+  }
+}
+
+.button__primary--second {
+  @media (min-width: $tablet-width) {
+    width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
+}
+
+.button__primary--third {
+  margin-bottom: 39px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }

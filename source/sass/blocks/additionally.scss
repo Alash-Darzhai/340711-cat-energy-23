@@ -1,5 +1,15 @@
 .additionally {
+  margin-bottom: 34px;
+  padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .additionally__legend {
@@ -8,6 +18,21 @@
 
 .additionally__list {
   margin-bottom: 34px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 123px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 104px;
+  }
 }
 
 .additionally__item {
@@ -16,8 +41,32 @@
   text-transform: uppercase;
 }
 
+.additionally__wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    flex-direction: row;
+    gap: 61px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 81px;
+    margin-bottom: 82px;
+  }
+}
+
 .required-input {
-  margin: 21px auto 32px;
+  margin: 0 auto;
   font-family: $arial;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
