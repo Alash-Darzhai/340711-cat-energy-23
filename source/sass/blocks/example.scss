@@ -41,6 +41,7 @@
 
 .example__title {
   margin-bottom: 33px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
@@ -90,10 +91,13 @@
 }
 
 .example__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 124px;
+  border: 1px solid $grey-lighten-3;
+  border-radius: 3px;
 }
 
 .example__subtitle {
@@ -105,11 +109,28 @@
 }
 
 .example__text {
+  position: absolute;
+  top: 32px;
+  left: 18px;
+  padding: 0 10px;
+  width: 77px;
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   color: $dark-grey-special;
+  background-color: $grey-lighten-2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    top: 41px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 32px;
+    background-color: $grey-lighten-2;
+  }
 }
 
 .example__price {
@@ -120,10 +141,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 174px;
+    width: 130px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    text-align: center;
   }
 }

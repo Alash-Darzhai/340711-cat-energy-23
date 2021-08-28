@@ -17,10 +17,22 @@
 }
 
 .button__secondary {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 94px;
+    width: 32px;
+    height: 10px;
+    background-image: url("/img/picture/arrow.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .button__third {
@@ -45,9 +57,12 @@
 }
 
 .button-wrapper-first {
+  align-self: stretch;
+
   @media (min-width: $tablet-width) {
     margin-left: 87px;
     width: 244px;
+    z-index: 1;
   }
 }
 
@@ -63,11 +78,11 @@
 
 .button__primary--third {
   margin-bottom: 39px;
-  width: 280px;
+  width: 100%;
 
-  @media (min-width: $tablet-width) {
-    width: 248px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 248px;
+  // }
 
   @media (min-width: $desktop-width) {
     width: 168px;

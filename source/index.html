@@ -19,7 +19,7 @@
       </a>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -35,7 +35,9 @@
     <h1 class="visually-hidden">Кэт энерджи</h1>
 
     <section class="hero">
-      <div class="hero__image-background">
+      <div class="hero__image-container">
+        <img class="hero__image-background" src="img/picture/image-background.png" width="320" height="302"
+          alt="Облизывающийся кот">
       </div>
       <div class="hero__wrapper container">
         <h2 class="hero__title">Функциональное питание для котов</h2>
@@ -45,9 +47,9 @@
             alt="Корм Кэт энерджи PRO со вкусом курицы">
         </div>
         <div class="button-wrapper-first">
-        <a class="button button__primary" href="form.html"
-          aria-label="Перейти на страницу подбора программы питания">Подобрать
-          программу</a>
+          <a class="button button__primary" href="form.html"
+            aria-label="Перейти на страницу подбора программы питания">Подобрать
+            программу</a>
         </div>
       </div>
     </section>
@@ -193,6 +195,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

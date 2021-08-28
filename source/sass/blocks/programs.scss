@@ -16,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 80px;
   }
@@ -23,6 +24,7 @@
 
 
 .programs-list__item {
+  position: relative;
   margin-bottom: 20px;
   padding: 30px 20px 22px;
   background-color: $grey;
@@ -32,16 +34,96 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
+  }
+}
+
+.programs-list__item--slim {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 53px;
+    background-image: url("/img/picture/cat_back_slim.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 41px;
+      left: 60%;
+      width: 200px;
+      height: 211px;
+      background-image: url("/img/picture/cat_back_slim_table.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      top: 41px;
+      left: 52px;
+      width: 200px;
+      height: 211px;
+      background-image: url("/img/picture/cat_back_slim_desk.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.programs-list__item--pro {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 67px;
+    height: 50px;
+    background-image: url("/img/picture/cat_back_pro.svg");
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 41px;
+      left: 60%;
+      width: 100px;
+      height: 106px;
+      background-image: url("/img/picture/cat_back_pro_table.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      top: 41px;
+      left: 52px;
+      width: 134px;
+      height: 100px;
+      background-image: url("/img/picture/cat_back_pro_desk.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
 .programs-list__title {
   margin-bottom: 22px;
+  padding-left: 81px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 160px;
+  }
 }
 
 .programs-list__description {
@@ -50,6 +132,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey-special;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+  }
 }
 
 .programs-list__catalog {

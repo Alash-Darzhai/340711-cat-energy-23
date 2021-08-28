@@ -1,7 +1,8 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  // align-items: center;
+  margin: 0 auto 2px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -17,6 +18,14 @@
 }
 
 .page-header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  gap: 30%;
+  padding: 10px;
+
   @media (min-width: $tablet-width) {
     width: 174px;
   }

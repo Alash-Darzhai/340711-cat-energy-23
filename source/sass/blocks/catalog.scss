@@ -31,6 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-between;
   gap: 19px;
   list-style: none;
 
@@ -47,7 +48,8 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    padding: 0 39px;
+    width: 45%;
     align-items: center;
     background-color: $grey;
   }
@@ -69,14 +71,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
-  width: 280px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 42px;
-    width: 252px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +87,7 @@
 }
 
 .catalog__image-wrap {
-  width: 140px;
+  width: 100%;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -94,11 +96,11 @@
 }
 
 .catalog__wrapper {
-  width: 140px;
+  width: 100%;
 
-  @media (min-width: $tablet-width) {
-    width: 248px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 248px;
+  // }
 
   @media (min-width: $desktop-width) {
     width: 169px;
@@ -162,7 +164,7 @@
 
 .catalog__subtitle--last,
 .catalog__text {
-  width: 280px;
+  width: 100%;
   text-align: center;
 
   @media (min-width: $desktop-width) {

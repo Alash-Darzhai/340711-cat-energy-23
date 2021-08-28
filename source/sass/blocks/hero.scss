@@ -1,27 +1,63 @@
 .hero {
   position: relative;
+  margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: stretch;
+  }
 }
 
-.hero__image-background {
-  background-image: url("../../img/picture/image-background.png");
-  background-size: 320px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  order: 1;
+.hero__image-container {
+  position: absolute;
+  order: 2;
+  width: 100%;
+  min-height: 302px;
+  background-color: $green;
+  opacity: 85%;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
+    top: -130px;
+    right: 0;
     display: block;
+    width: 50%;
+    height: 696px;
+  }
+}
+
+.hero__image-background {
+  position: absolute;
+  order: 1;
+  height: 302px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 50%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    // display: block;
+    width: 50%;
   }
 }
 
 .hero__wrapper {
+  position: relative;
+  order: 3;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+  }
 }
 
 .hero__title {
@@ -37,7 +73,7 @@
     margin-bottom: 41px;
     padding-top: 62px;
     padding-left: 87px;
-    width: 414px;
+    width: 80%;
     font-size: 60px;
     line-height: 60px;
     color: $black;
@@ -46,6 +82,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
+    width: 50%;
   }
 }
 
@@ -78,6 +115,7 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+    margin: 0 auto;
   }
 }
 
@@ -97,7 +135,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: 50%;
+    top: 1%;
     left: 60%;
     transform: translate(-50%, -50%);
     width: 552px;
