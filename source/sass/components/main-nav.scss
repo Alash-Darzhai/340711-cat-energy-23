@@ -40,9 +40,9 @@
   .main-nav--closed .site-list__item {
     display: none;
 
-    &--current {
-      display: block;
-    }
+    // &--current {
+    //   display: none;
+    // }
   }
 
   .main-nav--nojs .main-nav__toggle {
