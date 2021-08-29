@@ -1,9 +1,9 @@
 .advantages {
-  margin-bottom: 42px;
+  margin-bottom: 46px;
 }
 
 .advantages__title {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .advantages-list {
@@ -27,7 +27,7 @@
 
 .advantages__item {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   padding-left: 80px;
   font-family: $arial;
   color: $dark-grey-special;
@@ -45,7 +45,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -2px;
       left: 0;
       width: 60px;
       height: 60px;
@@ -72,7 +72,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -2px;
       left: 0;
       width: 60px;
       height: 60px;
@@ -99,7 +99,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -2px;
       left: 0;
       width: 60px;
       height: 60px;
@@ -111,7 +111,7 @@
       &::after {
         content: "";
         position: absolute;
-        top: 0;
+        top: -2px;
         right: 0;
         width: 112px;
         height: 232px;
@@ -126,7 +126,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -2px;
       left: 0;
       width: 60px;
       height: 60px;

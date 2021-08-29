@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 22px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: -83px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: stretch;
@@ -62,6 +66,7 @@
 
 .hero__title {
   margin-bottom: 25px;
+  padding-top: 27px;
   width: 249px;
   font-size: 36px;
   line-height: 36px;
@@ -71,7 +76,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 41px;
-    padding-top: 62px;
+    padding-top: 50px;
     padding-left: 87px;
     width: 80%;
     font-size: 60px;
@@ -97,7 +102,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
-    padding-left: 87px;
+    padding-left: 89px;
     font-size: 20px;
     line-height: 20px;
     color: $black;

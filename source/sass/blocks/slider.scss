@@ -1,4 +1,6 @@
 .slider {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     background-color: $grey-lighten-2;
   }
@@ -28,7 +30,7 @@
   }
 }
 
-.slider__item--before {
+.slider__item--after {
   display: none;
 
   @media (min-width: $tablet-width) {

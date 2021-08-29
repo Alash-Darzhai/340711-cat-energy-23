@@ -7,6 +7,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  // gap: 52px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -17,18 +18,22 @@
 }
 
 .page-footer__logo {
-  padding: 39px 96px 32px;
+  padding: 36px 0 32px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
 
+.page-footer__social {
+  padding: 20px;
+}
+
 .social__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 43px;
+  // margin-bottom: 43px;
   width: 130px;
   list-style: none;
 
@@ -42,6 +47,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0 21px;
   width: 281px;
 
   @media (min-width: $tablet-width) {

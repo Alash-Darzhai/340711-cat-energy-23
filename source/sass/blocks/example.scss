@@ -82,7 +82,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 27px;
+  margin-bottom: 35px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -95,6 +95,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 13px 0 2px;
   width: 124px;
   border: 1px solid $grey-lighten-3;
   border-radius: 3px;
@@ -110,8 +111,8 @@
 
 .example__text {
   position: absolute;
-  top: 32px;
-  left: 18px;
+  top: 47px;
+  left: 20px;
   padding: 0 10px;
   width: 77px;
   font-family: $arial;

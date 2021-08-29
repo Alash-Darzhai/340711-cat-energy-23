@@ -2,11 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 25px 0;
+  margin: 0 auto;
+  padding: 25px 0 37px;
+  width: 195px;
 
   @media (min-width: $tablet-width) {
     justify-content: center;
   }
+}
+
+.range-control__toggle {
+  width: 84px;
 }
 
 .range-control p {

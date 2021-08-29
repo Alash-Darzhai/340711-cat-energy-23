@@ -11,9 +11,15 @@
 
 .button__primary {
   display: block;
-  padding: 7px;
+  padding: 11px;
   background-color: $green;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button__secondary {
@@ -27,11 +33,21 @@
     content: "";
     position: absolute;
     top: 2px;
-    left: 94px;
+    left: 100px;
     width: 32px;
     height: 10px;
     background-image: url("/img/picture/arrow.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      top: 4px;
+      left: 132px;
+    }
   }
 }
 
@@ -60,7 +76,7 @@
   align-self: stretch;
 
   @media (min-width: $tablet-width) {
-    margin-left: 87px;
+    margin-left: 90px;
     width: 244px;
     z-index: 1;
   }
