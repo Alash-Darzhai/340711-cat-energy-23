@@ -1,4 +1,5 @@
 .example {
+  padding-top: 27px;
   background-color: $grey-lighten-2;
 
   @media (min-width: $tablet-width) {
@@ -6,6 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 6px;
     background-color: $grey-lighten-2;
   }
 }
@@ -40,11 +42,17 @@
 }
 
 .example__title {
-  margin-bottom: 33px;
-  padding-top: 27px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -141px;
+    left: 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -56,6 +64,8 @@
   color: $dark-grey-special;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    width: 700px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -71,9 +81,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 218px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 436px;
   }
 }
@@ -88,17 +100,32 @@
   @media (min-width: $tablet-width) {
     width: 366px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .example__item {
   position: relative;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 13px 0 2px;
   width: 124px;
   border: 1px solid $grey-lighten-3;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+  }
 }
 
 .example__subtitle {
@@ -107,12 +134,17 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__text {
   position: absolute;
   top: 47px;
-  left: 20px;
+  left: auto;
   padding: 0 10px;
   width: 77px;
   font-family: $arial;
@@ -124,12 +156,16 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    top: 41px;
+    top: 63px;
+    width: 150px;
+    font-size: 14px;
+    line-height: 14px;
     background-color: $white;
+    text-transform: lowercase;
   }
 
   @media (min-width: $desktop-width) {
-    top: 32px;
+    top: 63px;
     background-color: $grey-lighten-2;
   }
 }
@@ -142,7 +178,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 130px;
+    padding-top: 7px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 174px;
     text-align: right;
   }
 

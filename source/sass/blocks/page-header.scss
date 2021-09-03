@@ -10,11 +10,11 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-top: 43px;
   }
 }
 
@@ -22,12 +22,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 100%;
   align-items: center;
-  gap: 20%;
+  gap: 56px;
+  width: 100%;
   padding: 10px 0;
 
   @media (min-width: $tablet-width) {
+    gap: 12px;
     width: 174px;
   }
 

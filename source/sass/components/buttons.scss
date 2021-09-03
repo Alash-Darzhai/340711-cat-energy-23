@@ -11,9 +11,18 @@
 
 .button__primary {
   display: block;
-  padding: 11px;
+  padding: 11px 0 12px;
   background-color: $green;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $green-lighten;
+  }
+
+  &:active {
+    background-color: $green-lighten;
+    color: $white-opacity;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 17px;
@@ -24,10 +33,15 @@
 
 .button__secondary {
   position: relative;
+  padding-right: 40px;
   font-size: 16px;
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 30%;
+  }
 
   &::after {
     content: "";
@@ -36,11 +50,27 @@
     left: 100px;
     width: 32px;
     height: 10px;
-    background-image: url("/img/picture/arrow.svg");
+    background-image: url("/img/icons/arrow.svg");
     background-repeat: no-repeat;
   }
 
+  &:hover::after {
+    width: 32px;
+    height: 12px;
+    background-image: url("/img/icons/arrow_hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after {
+    width: 32px;
+    height: 12px;
+    background-image: url("/img/icons/arrow_hover.svg");
+    background-repeat: no-repeat;
+    opacity: 30%;
+  }
+
   @media (min-width: $tablet-width) {
+    padding-right: 55px;
     font-size: 20px;
     line-height: 20px;
 
@@ -79,6 +109,10 @@
     margin-left: 90px;
     width: 244px;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 

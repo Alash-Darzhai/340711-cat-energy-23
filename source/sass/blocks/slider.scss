@@ -27,6 +27,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-bottom: 5px;
+  }
+}
+
+.slider__item {
+  @media (min-width: $tablet-width) {
+    height: 333px;
   }
 }
 
