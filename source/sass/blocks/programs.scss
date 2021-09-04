@@ -142,17 +142,32 @@
 }
 
 .programs-list__description {
+  position: relative;
   margin-bottom: 42px;
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey-special;
 
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -24px;
+    left: 0;
+    width: 240px;
+    height: 1px;
+    background-color: $grey-lighten;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
     width: 340px;
     font-size: 16px;
     line-height: 24px;
+
+    &::after {
+      content: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

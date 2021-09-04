@@ -22,15 +22,47 @@
 }
 
 .page-footer__logo {
+  position: relative;
   padding: 38px 0 32px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 2px;
+    left: -76px;
+    width: 280px;
+    height: 1px;
+    background-color: $grey-lighten;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
 .page-footer__social {
+  position: relative;
   padding: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 4px;
+    left: -56px;
+    width: 280px;
+    height: 1px;
+    background-color: $grey-lighten;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .social__list {
