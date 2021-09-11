@@ -5,14 +5,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: -9px;
-    padding-top: 50px;
+    padding-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: stretch;
     margin-bottom: 267px;
-    padding-top: 99px;
+    padding-top: 109px;
   }
 }
 
@@ -22,7 +22,7 @@
   right: 0;
   order: 2;
   width: 100%;
-  min-height: 303px;
+  min-height: 302px;
   background-color: $green;
   opacity: 85%;
 
@@ -35,7 +35,7 @@
     right: 0;
     display: block;
     width: 50%;
-    height: 700px;
+    height: 709px;
   }
 }
 
@@ -44,6 +44,7 @@
   order: 1;
   height: 302px;
   width: 100%;
+  max-width: 768px;
   object-fit: cover;
   opacity: 50%;
 
@@ -52,7 +53,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: block;
     width: 50%;
   }
 }
@@ -72,7 +72,8 @@
 
 .hero__title {
   margin-bottom: 25px;
-  width: 249px;
+  width: 100%;
+  max-width: 760px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -96,7 +97,7 @@
 }
 
 .hero__slogan {
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -114,7 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-bottom: 51px;
     padding-left: 80px;
   }
 }

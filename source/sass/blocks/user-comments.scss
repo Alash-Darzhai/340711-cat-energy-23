@@ -1,17 +1,19 @@
 .user-comments {
+  margin-bottom: 20px;
+  padding: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 64px;
   }
 }
 
 .user-comments__legend {
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
@@ -19,10 +21,19 @@
 }
 
 .user-comments__description {
+  padding: 10px 13px;
   min-height: 150px;
   width: 100%;
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey-special;
   text-transform: uppercase;
+  border: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,26 +1,35 @@
 .contacts {
   position: relative;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.contacts--background {
+  background-color: $grey;
 }
 
 .contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 30px auto 24px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 65px 41px 51px 40px;
+    padding: 38px 41px 51px 40px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 91px;
-    left: 110px;
+    top: 93px;
+    left: 342px;
     order: 2;
     width: 574px;
     padding: 66px 89px 52px 76px;
@@ -29,7 +38,8 @@
 }
 
 .contacts__subtitle {
-  width: 139px;
+  width: 100%;
+  max-width: 139px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -37,20 +47,23 @@
   color: $black-1;
 
   @media (min-width: $tablet-width) {
-    width: 171px;
+    width: 100%;
+    max-width: 171px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
   }
 }
 
 .contacts__adress {
-  width: 140px;
+  width: 100%;
+  max-width: 140px;
   font-family: $arial;
   line-height: 20px;
   color: $dark-grey-special;
 
   @media (min-width: $tablet-width) {
-    width: 159px;
+    width: 100%;
+    max-width: 159px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -70,6 +83,7 @@
 
 .contacts__map {
   width: 100%;
+  border: none;
 
   @media (min-width: $tablet-width) {
     height: 400px;

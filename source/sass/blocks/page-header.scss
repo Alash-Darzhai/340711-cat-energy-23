@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   margin: 0 auto 4px;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 43px;
+    padding-top: 46px;
   }
 }
 

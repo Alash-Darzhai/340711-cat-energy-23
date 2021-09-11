@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 32px;
+}
+
 .program-title {
   margin-bottom: 37px;
   font-size: 36px;
@@ -16,12 +20,14 @@
 }
 
 .program-description {
-  margin-bottom: 39px;
+  margin-bottom: 38px;
+  width: 100%;
+  max-width: 226px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
-    width: 323px;
+    max-width: 323px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -31,16 +37,19 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 37px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    gap: 72px;
+    gap: 52px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     gap: 80px;
+    margin-bottom: 49px;
   }
 }
 
@@ -59,20 +68,27 @@
 
 .program-form__item {
   display: flex;
-  gap: 11px;
-  margin-bottom: 13px;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
   font-size: 16px;
   color: $dark-grey-special;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    gap: 24px;
+    margin-bottom: 21px;
+  }
 }
 
 .program-type {
-  padding-left: 20px;
+  padding: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
     gap: 72px;
-    padding: 25px 0 0 28px;
+    padding: 16px 16px 3px;
+    border: 1px solid $dark-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,4 +98,17 @@
 
 .program-type__list {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 28px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 24px 0;
+  }
+}
+
+.program-type__item {
+  margin-bottom: 25px;
+  padding-left: 45px;
 }

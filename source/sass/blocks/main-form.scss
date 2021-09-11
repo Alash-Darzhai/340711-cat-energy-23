@@ -1,0 +1,11 @@
+.main-form {
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+  }
+}

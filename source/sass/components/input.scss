@@ -3,6 +3,11 @@
   font-size: 16px;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .input-radio,
@@ -11,22 +16,85 @@
   font-size: 16px;
   color: $black-2;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.label-radio {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -45px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey-lighten-3;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: -59px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  // &:checked::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 13px;
+  //   height: 13px;
+  //   border-radius: 50%;
+  //   background-color: $green;
+  //   z-index: 5;
+  // }
 }
 
 .input-text,
 .label-text {
-  margin-bottom: 14px;
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey-special;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .input-text {
+  position: relative;
   width: 100%;
+  padding: 13px 14px 13px;
+  border: 1px solid $grey-lighten-3;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 14px;
+  }
 }
 
 .label-text {
   display: inline-block;
   min-width: max-content;
+}
+
+
+.user-contacts__item .input-text {
+  padding: 11px 19px 10px;
 }

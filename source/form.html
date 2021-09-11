@@ -15,30 +15,30 @@
         <img src="img/logo.svg" width="34" height="38" alt="Кэт">
       </a>
       <a class="page-header__logo-text" href="#">
-        <img src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
+        <img src="img/header_logo.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current"> <a href="index.html">Главная</a></li>
-        <li class="site-list__item"> <a href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item"> <a>Подбор продукции</a></li>
+        <li class="site-list__item site-list__item--color"> <a href="index.html">Главная</a></li>
+        <li class="site-list__item site-list__item--color"> <a href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item site-list__item--color site-list__item--current"> <a>Подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main-form">
-    <div class="container">
+    <div class="container container__small">
       <h2 class="program-title">Подбор программы</h2>
       <p class="program-description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
     </div>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="container">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="container container__small">
         <div class="program">
           <fieldset class="program-form">
             <legend class="visually-hidden">Подбор программы</legend>
@@ -64,15 +64,17 @@
             <legend class="visually-hidden">Тип программы</legend>
             <ul class="program-type__list">
               <li class="program-type__item">
-                <input class="input-radio" id="slim-type" type="radio" name="program-type" value="slim" checked>
+                <input class="input-radio visually-hidden" id="slim-type" type="radio" name="program-type" value="slim"
+                  checked>
                 <label class="label-radio" for="slim-type" aria-label="Программа для похудения">Похудение</label>
               </li>
               <li class="program-type__item">
-                <input class="input-radio" id="pro-type" type="radio" name="program-type" value="pro">
+                <input class="input-radio visually-hidden" id="pro-type" type="radio" name="program-type" value="pro">
                 <label class="label-radio" for="pro-type" aria-label="Программа для набора массы">Набор массы</label>
               </li>
               <li class="program-type__item">
-                <input class="input-radio" id="advice-type" type="radio" name="program-type" value="advice">
+                <input class="input-radio visually-hidden" id="advice-type" type="radio" name="program-type"
+                  value="advice">
                 <label class="label-radio" for="advice-type" aria-label="Нужен совет по подбору программы">Не знаю
                   (Нужен ваш совет)</label>
               </li>
@@ -82,8 +84,8 @@
       </div>
 
       <fieldset class="user-contacts">
-        <div class="container">
-          <legend class="legend-default user-contacts__legend">Контактные данные (владельца кота)</legend>
+        <legend class="legend-default user-contacts__legend">Контактные данные (владельца кота)</legend>
+        <div class="container container__small">
           <ul class="user-contacts__list">
             <li class="user-contacts__item">
               <label class="label-text" for="user-email">E-mail:*</label>
@@ -91,7 +93,7 @@
                 placeholder="kuklachev@gmail.com">
             </li>
             <li class="user-contacts__item">
-              <label class="label-text" for="user-phone">Телефон</label>
+              <label class="label-text" for="user-phone">Телефон:*</label>
               <input class="input-text" id="user-phone" type="tel" name="phone" required
                 placeholder="8 (960) 900-60-90">
             </li>
@@ -100,8 +102,8 @@
       </fieldset>
 
       <fieldset class="user-comments">
-        <div class="container">
-          <legend class="legend-default user-comments__legend">Комментарий</legend>
+        <legend class="legend-default user-comments__legend">Комментарий</legend>
+        <div class="container container__small">
           <label for="message"></label>
           <textarea class="user-comments__description" id="message" name="message"
             placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -109,39 +111,39 @@
       </fieldset>
 
       <fieldset class="additionally">
-        <div class="container">
-          <legend class="legend-default additionally__legend">Дополнительно</legend>
+        <legend class="legend-default additionally__legend">Дополнительно</legend>
+        <div class="container container__small">
           <ul class="additionally__list">
             <li class="additionally__item">
-              <input class="input-chekbox" type="checkbox" name="sweetener" id="sweetener" checked>
+              <input class="input-chekbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="label-chekbox" for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="additionally__item">
-              <input class="input-chekbox" type="checkbox" name="milk" id="milk">
+              <input class="input-chekbox visually-hidden" type="checkbox" name="water" id="water">
+              <label class="label-chekbox" for="water">Питьевая вода</label>
+            </li>
+            <li class="additionally__item">
+              <input class="input-chekbox visually-hidden" type="checkbox" name="milk" id="milk">
               <label class="label-chekbox" for="milk">Молоко</label>
             </li>
             <li class="additionally__item">
-              <input class="input-chekbox" type="checkbox" name="water" id="water">
-              <label class="label-chekbox" for="water">Вода</label>
-            </li>
-            <li class="additionally__item">
-              <input class="input-chekbox" type="checkbox" name="vitamins" id="vitamins">
+              <input class="input-chekbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
               <label class="label-chekbox" for="vitamins">Витамины</label>
             </li>
           </ul>
         </div>
       </fieldset>
-      <div class="additionally__wrap container">
+      <div class="additionally__wrap container container__small">
         <button class="button button__primary button__primary--second" type="button">Отправить заявку</button>
         <p class="required-input">* — Обязательные поля</p>
       </div>
     </form>
 
-    <section class="contacts">
+    <section class="contacts contacts--background">
       <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="contacts__subtitle">Приглашаем <br>к сотрудничеству дилеров!</h3>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <br><span
               class="contacts__city">Санкт-Петербург</span></p>
         </div>
@@ -157,7 +159,7 @@
     <div class="container">
       <div class="page-footer__container">
         <a class="page-footer__logo" href="#">
-          <img src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
+          <img src="img/footer_logo.svg" width="128" height="24" alt="Кэт энерджи">
         </a>
         <div class="page-footer__social">
           <ul class="social__list">
@@ -198,6 +200,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

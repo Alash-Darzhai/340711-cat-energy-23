@@ -11,7 +11,9 @@
 
 .button__primary {
   display: block;
-  padding: 11px 0 12px;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
   background-color: $green;
   text-transform: uppercase;
 
@@ -25,9 +27,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 17px;
+    padding: 17px 18px 15px 22px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 18px 17px 22px;
   }
 }
 
@@ -88,18 +94,18 @@
   background-color: $green;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: $green-lighten;
+  }
+
+  &:active {
+    background-color: $green-lighten;
+    color: $white-opacity;
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
   }
-}
-
-.button__fourth {
-  padding: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  color: $black;
-  background-color: $grey;
-  text-transform: uppercase;
 }
 
 .button-wrapper-first {
@@ -118,7 +124,7 @@
 
 .button__primary--second {
   @media (min-width: $tablet-width) {
-    width: 282px;
+    width: 284px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,14 +133,35 @@
 }
 
 .button__primary--third {
-  margin-bottom: 39px;
+  margin-bottom: 12px;
   width: 100%;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 248px;
-  // }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    width: 100%;
+    max-width: 248px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 168px;
+    width: 169px;
+  }
+}
+
+.button__fourth {
+  margin-bottom: 35px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-grey-special;
+  background-color: $grey;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $grey-lighten-4;
+  }
+
+  &:active {
+    background-color: $grey;
+    color: $white-opacity-2;
   }
 }
