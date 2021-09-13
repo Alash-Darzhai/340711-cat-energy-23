@@ -27,8 +27,8 @@
   padding: 10px 0;
 
   @media (min-width: $tablet-width) {
-    gap: 12px;
-    width: 174px;
+    display: block;
+    padding: 7px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,10 +36,31 @@
   }
 }
 
+.page-header__logo-icon img {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 174px;
+    height: auto;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: auto;
+  }
+}
+
 .page-header__logo-text {
   padding-top: 5px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    display: none;
   }
 }

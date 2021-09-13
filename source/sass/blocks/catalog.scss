@@ -122,6 +122,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 172px;
   }
 }
 

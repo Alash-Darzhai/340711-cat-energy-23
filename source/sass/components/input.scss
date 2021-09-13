@@ -82,7 +82,17 @@
   position: relative;
   width: 100%;
   padding: 13px 14px 13px;
-  border: 1px solid $grey-lighten-3;
+  border: 1px solid $dark-grey;
+
+  &:hover {
+    border: 1px solid $grey-lighten-3;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid $dark-grey-special;
+    box-sizing: border-box;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 14px;

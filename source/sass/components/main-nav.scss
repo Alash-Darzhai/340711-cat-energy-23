@@ -114,26 +114,14 @@
 
 .site-list__item--current {
   @media (min-width: $tablet-width) {
-    // position: relative;
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   right: 0;
-    //   bottom: 16px;
-    //   width: 154px;
-    //   height: 2px;
-    //   background: $green;
-    // }
     border-bottom: 2px solid $green;
   }
+}
 
-  // @media (min-width: $desktop-width) {
-  //   &::after {
-  //     bottom: 17px;
-  //     width: 168px;
-  //   }
-  // }
+.site-list__item--color + .site-list__item--current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
+  }
 }
 
 .site-list__item a {
@@ -160,7 +148,8 @@
     }
 
     &:active {
-      opacity: 30%;
+      opacity: 100%;
+      border-bottom: 2px solid $green;
     }
   }
 
@@ -169,13 +158,17 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-    color: $white;
     z-index: 5;
   }
 }
 
 .site-list__item--color a {
   @media (min-width: $desktop-width) {
-    color: $black;
+    color: $white;
+
+    &:active {
+      opacity: 100%;
+      border-bottom: 2px solid $white;
+    }
   }
 }
