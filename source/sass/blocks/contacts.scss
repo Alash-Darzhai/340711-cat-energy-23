@@ -3,6 +3,7 @@
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
     background-color: $white;
   }
 
@@ -28,8 +29,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 93px;
-    left: 342px;
+    top: 96px;
+    left: 110px;
     order: 2;
     width: 574px;
     padding: 66px 89px 52px 76px;

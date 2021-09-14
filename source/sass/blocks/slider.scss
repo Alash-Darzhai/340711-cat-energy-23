@@ -28,13 +28,15 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-bottom: 5px;
   }
 }
 
 .slider__item {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     height: 333px;
+    width: 50%;
   }
 }
 

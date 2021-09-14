@@ -49,7 +49,7 @@
                       srcset="img/picture/catalog-1-desktop.png 1x, img/picture/catalog-1-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/picture/catalog-1-tablet.png 1x, img/picture/catalog-1-tablet@2x.png 2x">
-                    <img class="catalog__image" src="img/picture/catalog-1-mobile.png"
+                    <img class="catalog__image catalog__image--first" src="img/picture/catalog-1-mobile.png"
                       srcset="img/picture/catalog-1-mobile@2x.png 2x" alt="Cat Energy PRO 500 г со вкусом курицы" />
                   </picture>
                 </a>
@@ -85,7 +85,7 @@
                       srcset="img/picture/catalog-2-desktop.png 1x, img/picture/catalog-2-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/picture/catalog-2-tablet.png 1x, img/picture/catalog-2-tablet@2x.png 2x">
-                    <img class="catalog__image" src="img/picture/catalog-2-mobile.png"
+                    <img class="catalog__image catalog__image--second" src="img/picture/catalog-2-mobile.png"
                       srcset="img/picture/catalog-2-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г со вкусом курицы" />
                   </picture>
                 </a>
@@ -121,7 +121,7 @@
                       srcset="img/picture/catalog-3-desktop.png 1x, img/picture/catalog-3-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/picture/catalog-3-tablet.png 1x, img/picture/catalog-3-tablet@2x.png 2x">
-                    <img class="catalog__image" src="img/picture/catalog-3-mobile.png"
+                    <img class="catalog__image catalog__image--third" src="img/picture/catalog-3-mobile.png"
                       srcset="img/picture/catalog-3-mobile@2x.png 2x" alt="Cat Energy PRO 500 г со вкусом рыбы" />
                   </picture>
                 </a>
@@ -157,7 +157,7 @@
                       srcset="img/picture/catalog-4-desktop.png 1x, img/picture/catalog-4-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/picture/catalog-4-tablet.png 1x, img/picture/catalog-4-tablet@2x.png 2x">
-                    <img class="catalog__image" src="img/picture/catalog-4-mobile.png"
+                    <img class="catalog__image catalog__image--fourth" src="img/picture/catalog-4-mobile.png"
                       srcset="img/picture/catalog-4-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г со вкусом рыбы" />
                   </picture>
                 </a>
@@ -193,7 +193,7 @@
                       srcset="img/picture/catalog-5-desktop.png 1x, img/picture/catalog-5-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/picture/catalog-5-tablet.png 1x, img/picture/catalog-5-tablet@2x.png 2x">
-                    <img class="catalog__image" src="img/picture/catalog-5-mobile.png"
+                    <img class="catalog__image catalog__image--fifth" src="img/picture/catalog-5-mobile.png"
                       srcset="img/picture/catalog-5-mobile@2x.png 2x" alt="Cat Energy PRO 500 г со вкусом гречки" />
                   </picture>
                 </a>
@@ -229,7 +229,7 @@
                       srcset="img/picture/catalog-6-desktop.png 1x, img/picture/catalog-6-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/picture/catalog-6-tablet.png 1x, img/picture/catalog-6-tablet@2x.png 2x">
-                    <img class="catalog__image" src="img/picture/catalog-6-mobile.png"
+                    <img class="catalog__image catalog__image--sixth" src="img/picture/catalog-6-mobile.png"
                       srcset="img/picture/catalog-6-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г со вкусом гречки" />
                   </picture>
                 </a>
@@ -265,7 +265,7 @@
                       srcset="img/picture/catalog-7-desktop.png 1x, img/picture/catalog-7-desktop@2x.png 2x">
                     <source media="(min-width: 768px)"
                       srcset="img/picture/catalog-7-tablet.png 1x, img/picture/catalog-7-tablet@2x.png 2x">
-                    <img class="catalog__image" src="img/picture/catalog-7-mobile.png"
+                    <img class="catalog__image catalog__image--seventh" src="img/picture/catalog-7-mobile.png"
                       srcset="img/picture/catalog-7-mobile@2x.png 2x" alt="Cat Energy PRO 500 г со вкусом риса" />
                   </picture>
                 </a>
@@ -363,8 +363,14 @@
           <div class="present">
             <h2 class="visually-hidden">Подарок</h2>
             <p class="present__description">Закажите все<br> и получите чехол для кота в подарок!</p>
-            <img class="present__image" src="img/picture/gift-photo.png" width="280" height="289"
-              alt="Сумка-чехол для переноски кота">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/picture/gift-photo-desktop.png 1x, img/picture/gift-photo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/picture/gift-photo-tablet.png 1x, img/picture/gift-photo-tablet@2x.png 2x">
+              <img class="present__image" src="img/picture/gift-photo.png" srcset="img/picture/gift-photo@2x.png 2x"
+                alt="Сумка-чехол для переноски кота">
+            </picture>
           </div>
         </div>
       </div>

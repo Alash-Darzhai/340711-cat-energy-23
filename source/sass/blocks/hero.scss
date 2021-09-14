@@ -35,7 +35,7 @@
     right: 0;
     display: block;
     width: 50%;
-    height: 705px;
+    height: 706px;
   }
 }
 
@@ -46,14 +46,18 @@
   width: 100%;
   max-width: 768px;
   object-fit: cover;
-  opacity: 50%;
+  opacity: 25%;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    top: 10px;
+    display: block;
+    width: 720px;
+    height: 696px;
+    object-fit: cover;
   }
 }
 
@@ -115,7 +119,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
     padding-left: 80px;
   }
 }

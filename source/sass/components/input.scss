@@ -23,6 +23,29 @@
   }
 }
 
+.input-radio:checked + .label-radio::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -36px;
+  width: 13px;
+  height: 13px;
+  background-color: $green;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 6px;
+    left: -49px;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 5px;
+    left: -48px;
+  }
+}
+
 .label-radio {
   position: relative;
   display: block;
@@ -41,6 +64,10 @@
     box-sizing: border-box;
   }
 
+  &::before:hover {
+    box-shadow: 0 2px 4px $shadow;
+  }
+
   @media (min-width: $tablet-width) {
     &::before {
       content: "";
@@ -51,18 +78,64 @@
       height: 40px;
     }
   }
+}
 
-  // &:checked::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 13px;
-  //   height: 13px;
-  //   border-radius: 50%;
-  //   background-color: $green;
-  //   z-index: 5;
-  // }
+.label-chekbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -45px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey-lighten-3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: -7px;
+      left: -58px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: -9px;
+      left: -59px;
+    }
+  }
+}
+
+.input-chekbox:checked + .label-chekbox::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -43px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: -51px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/icons/tick-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -1px;
+    left: -52px;
+  }
 }
 
 .input-text,
@@ -106,5 +179,9 @@
 
 
 .user-contacts__item .input-text {
-  padding: 11px 19px 10px;
+  padding: 13px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 18px;
+  }
 }
