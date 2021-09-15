@@ -12,7 +12,7 @@
 .button__primary {
   display: block;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   background-color: $green;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 17px 18px 17px 22px;
+    padding: 17px 18px 17px 19px;
   }
 }
 
@@ -168,6 +168,6 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    max-width: 249px;
+    min-width: 249px;
   }
 }
